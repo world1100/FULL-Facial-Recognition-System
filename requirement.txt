@@ -1,0 +1,15 @@
+scikit-learn
+cmake
+face_recognition
+opencv-python
+requests
+argparse
+colorama
+imutils
+pygithub
+scikit-learn
+numpy==1.26.4
+Pillow==10.0.1
+opencv-python
+requests
+clint
