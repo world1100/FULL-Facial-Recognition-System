@@ -68,3 +68,13 @@ After running the code, We are going to choose our camera, wether it's wireless 
 #### Start using it
 
 so to get started, lets do a simple face detection, click on face detection button that you can see on the GUI page
+
+![image](https://github.com/user-attachments/assets/aad30e45-2802-48c1-8701-9dd1522ed612)
+
+In here, there are Several options, Such as face detection, face hider and face mesh, for example i'm going to click on face detection, by the way, all the options are ONLY for camera in this section
+
+![image](https://github.com/user-attachments/assets/2768ac9d-b32c-400f-a8b9-05326a787bec)
+
+And here is how real time face detection from camera look like(i am holding my phone in my hand in fron tof the camera):
+
+![image](https://github.com/user-attachments/assets/83a114a7-9a18-4d7c-ba30-ac39c93b25a8)
