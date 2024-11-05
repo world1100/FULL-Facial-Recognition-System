@@ -369,7 +369,7 @@ def fr():
             opencvimage = np.array(pil_image)
             return opencvimage
         if __name__ == "__main__":
-            train_a = messagebox.askyesno("paradox master face recognition", "do you want to retrain all faces again?(click yes if you have add new faces)")
+            train_a = messagebox.askyesno("BW face recognition", "do you want to retrain all faces again?(click yes if you have add new faces)")
             if train_a == True:
                 print(f"{Fore.YELLOW} Getting requirements ready to train all models, this may take some minutes if you have 99+ trained faces pictures")
                 classifier = train("database/recognized_faces/train", model_save_path="data/prx_models/trained_faces.prx", n_neighbors=2)
@@ -490,7 +490,7 @@ def fr():
             pil_image.show()
             
         if __name__ == "__main__":
-            train_a = messagebox.askyesno("paradox master face recognition", "do you want to retrain all faces again?(click yes if you have add new faces)")
+            train_a = messagebox.askyesno("BW face recognition", "do you want to retrain all faces again?(click yes if you have add new faces)")
             if train_a == True:
                 print(f"{Fore.YELLOW} Getting requirements ready to train all models, this may take some minutes if you have 99+ trained faces pictures")
                 classifier = train("database/recognized_faces/train", model_save_path="data/prx_models/trained_faces.prx", n_neighbors=2)
