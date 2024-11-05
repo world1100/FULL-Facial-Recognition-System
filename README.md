@@ -78,3 +78,20 @@ In here, there are Several options, Such as face detection, face hider and face 
 And here is how real time face detection from camera look like(i am holding my phone in my hand in fron tof the camera):
 
 ![image](https://github.com/user-attachments/assets/83a114a7-9a18-4d7c-ba30-ac39c93b25a8)
+
+Here is how face hider look like:
+
+![image](https://github.com/user-attachments/assets/a518d58e-95dd-44a3-a8b4-176e5ddf4042)
+
+And finally, Face mesh:
+
+![image](https://github.com/user-attachments/assets/4bcbd58f-6eb3-4306-bb11-fae9e514f885)
+
+
+### Features:
+
+### In face detection, by pressing c button, you can see your face cropped, by pressing s, the cropped face is saved in datqabase/saved faces, but pressing/holding escape button for several times the window closes
+
+Now lets get to Face Recognition, just click on the Face Recognition button on the main screen
+
+Now this time, i'm going to choose face recognition from picture to recognize a face from an image
