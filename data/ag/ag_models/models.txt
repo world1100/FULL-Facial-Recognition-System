@@ -1,0 +1,2 @@
+https://github.com/eveningglow/age-and-gender-classification/raw/master/model/gender_net.caffemodel
+https://github.com/eveningglow/age-and-gender-classification/raw/master/model/age_net.caffemodel

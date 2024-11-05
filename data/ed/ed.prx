@@ -1,0 +1,22 @@
+from fer import FER
+import cv2
+import datetime
+import warnings
+import os
+from colorama import init, Fore
+warnings.filterwarnings("ignore")
+emotion_detector = FER()
+current_time = datetime.datetime.now()
+test_img = cv2.imread("data/ed/{}{}.jpg".format(current_time.day, current_time.hour))
+warnings.filterwarnings("ignore")
+analysis = emotion_detector.detect_emotions(test_img)
+warnings.filterwarnings("ignore")
+dominant_emotion, emotion_score = emotion_detector.top_emotion(test_img)
+warnings.filterwarnings("ignore")
+if dominant_emotion != None:
+    with open("data/ed/{}{}.prx".format(current_time.day, current_time.hour), 'w') as f:
+        f.write("\n \n \n \n \n \n \n \n \n \n result: {} \n more information: \n {}".format(dominant_emotion, analysis))
+else:
+    with open("data/ed/{}{}.prx".format(current_time.day, current_time.hour), 'w') as f:
+        f.write("\n \n \n \n \n \n \n \n \n \n No Face Detected, Try Again")
+warnings.filterwarnings("ignore")

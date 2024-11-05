@@ -1,0 +1,11 @@
+scikit-learn
+pillow
+cmake
+face_recognition
+opencv-python
+requests
+argparse
+colorama
+imutils
+numpy
+pygithub
