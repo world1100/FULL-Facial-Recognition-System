@@ -65,3 +65,6 @@ After you have successfully installed all libraries that are needed, You are rea
 
 After running the code, We are going to choose our camera, wether it's wireless or it's an internal camera, If you are Using an internal camera, then you have to choose internal on the first question, on the second question, depends on how many cameras are connected to your computer, you have to choose the number, for example i have 2 cameras connected to my computer, the camera number one is 0 and the camera number two is 1, if it's in IP mode, you just need to write your camera ip, wether it's local or you have a port forwarding or you want to create a home security system setup
 
+#### Start using it
+
+so to get started, lets do a simple face detection, click on face detection button that you can see on the GUI page
