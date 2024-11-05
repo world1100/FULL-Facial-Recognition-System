@@ -44,6 +44,9 @@
 
 ### First Step:
 <code>git clone https://github.com/KasraMoradi-0/FULL-Facial-Recognition-System</code>
+
+And then run:
+
 <code>pip install -r requirement.txt</code>
 
 By running this code, pip will automatically install every single Library that is needed to run the program, But always remember, if you are on windows, some of them may have problems such as dlib or pillow
