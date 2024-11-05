@@ -505,7 +505,7 @@ def fr():
             root3.deiconify()
             root.destroy()
         root.protocol("WM_DELETE_WINDOW", disable_event)
-        root.title('Master Pradox Face Recognition -  Choose Image File')
+        root.title('BW face recognition -  Choose Image File')
         root.geometry("600x350")
         name_var=tk.StringVar()
         def ret():
@@ -517,7 +517,7 @@ def fr():
         def submit2():
             image_file = filename
             full_file_path = filename
-            root.title("Master Pradox Face Recognition - " + filename)
+            root.title("BW face recognition - " + filename)
             # Find all people in the image using a trained classifier model
             # Note: You can pass in either a classifier file name or a classifier model instance
             predictions = predict(full_file_path, model_path="data/prx_models/trained_faces.prx")
@@ -534,7 +534,7 @@ def fr():
         def submit3():
             global name
             name=name_var.get()
-            root.title("Master Pradox Face Recognition - " + filename)
+            root.title("BW face recognition - " + filename)
             # Load the jpg file into a numpy array
             image = face_recognition.load_image_file("{}".format(filename))
             image2 = face_recognition.load_image_file("{}".format(filename))
@@ -599,7 +599,7 @@ def fr():
             # Load the image
             image_path = filename
             # Analyze the image
-            root.title("Master Pradox Face Recognition - " + filename)
+            root.title("BW face recognition - " + filename)
             try:
                 demography = DeepFace.analyze(image_path, actions=['age', 'gender', 'emotion'])
                 t.insert("1.0", f"result: {demography}")
@@ -636,7 +636,7 @@ def fr():
             filename = "database/saved faces/screenshot.png"
             image_file = filename
             full_file_path = filename
-            root.title("Master Pradox Face Recognition - " + filename)
+            root.title("BW face recognition - " + filename)
             # Find all people in the image using a trained classifier model
             # Note: You can pass in either a classifier file name or a classifier model instance
             predictions = predict(full_file_path, model_path="data/prx_models/trained_faces.prx")
@@ -651,7 +651,7 @@ def fr():
             # Let's Create some buttons to help the user and make the program more optional & friendly for a beginner user!
             name_var.set("")
             name=name_var.get()
-            root.title("Master Pradox Face Recognition - " + filename)
+            root.title("BW face recognition - " + filename)
             # Load the jpg file into a numpy array
             image = face_recognition.load_image_file("{}".format(filename))
             image2 = face_recognition.load_image_file("{}".format(filename))
@@ -904,7 +904,7 @@ def fd():
                 if results.detections is not None:
                     for detection in results.detections:
                         debug_image = draw_detection(debug_image, detection)
-                cv.imshow("Master Pradox Face Recognition - face detection", debug_image)
+                cv.imshow("BW face recognition - face detection", debug_image)
                 key = cv.waitKey(1)
                 if 27 == cv.waitKey(1):
                     break
@@ -966,7 +966,7 @@ def fd():
                 if results.detections is not None:
                     for detection in results.detections:
                         debug_image = draw_detection(debug_image, detection)
-                cv.imshow("Master Pradox Face Recognition - face hider", debug_image)
+                cv.imshow("BW face recognition - face hider", debug_image)
                 key = cv.waitKey(1)
                 if 27 == cv.waitKey(1):
                     break
@@ -1094,7 +1094,7 @@ def cc():
             os.remove(clean_up)
 import tkinter as tk
 root2=tk.Tk()
-root2.title('Master Pradox Face Recognition')
+root2.title('BW face recognition')
 root2.geometry("250x170")
 root2.resizable(0, 0)
 name_var=tk.StringVar()
