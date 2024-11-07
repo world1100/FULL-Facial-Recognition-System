@@ -95,3 +95,31 @@ And finally, Face mesh:
 Now lets get to Face Recognition, just click on the Face Recognition button on the main screen
 
 Now this time, i'm going to choose face recognition from picture to recognize a face from an image
+
+## Face Train
+
+Yes, you have noticed that when you run Face Recognition form picture there is a y/n question
+
+![image](https://github.com/user-attachments/assets/9cd70663-009a-443e-acc5-d0a22eed3991)
+
+So, let me explain how it works:
+
+you can put faces + names in database/recognized_faces/train
+
+For example. you can see Joe Biden is already there, You can add Names like: Andrew, and in Andrew folder, put like 100 images of Andrew face(100 is example, more pictures = better recognition)
+
+but the program is not able to recognize this all by it self, so you need to train the program to recognize every single face from database, the program creates a file in data/prx_models named trained_faces.prx, here how it looks like to train faces:
+
+![image](https://github.com/user-attachments/assets/81bb456d-f62b-4ab4-b029-3d58049ccdef)
+
+And here how it looks like when the training is done:
+
+![image](https://github.com/user-attachments/assets/5c2ef36d-0d87-47cd-a48b-99f5b8bcf0e4)
+
+## Warning
+
+### NEVER EVER GIVE YOUR VERY OWN trained_faces.prx FILE TO SOMEONE ELSE UNTIL YOU TRUST THEM, THERE ARE A LOT OF USEFUL INFO IN THAT FILE ESPECIALLY FOR HACKERS
+
+### by the way, be aware that you don't always need to train faces again, you only need to do it when you add more faces, or this is the first time you are using the program
+
+## Face Recognition from picutre
