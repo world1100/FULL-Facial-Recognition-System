@@ -123,3 +123,37 @@ And here how it looks like when the training is done:
 ### by the way, be aware that you don't always need to train faces again, you only need to do it when you add more faces, or this is the first time you are using the program
 
 ## Face Recognition from picutre
+
+![image](https://github.com/user-attachments/assets/8561aba9-f085-4a6e-bfa2-cb155b1ef693)
+
+There are a lot of options in this part, to get started, lets open an image first
+
+Lets click on Find all Biometrics on face & save cropped faces:
+
+![image](https://github.com/user-attachments/assets/4d5425bf-b9ae-4f10-9dde-29917d62df2c)
+
+And as you can see here, Every single information about the face is written in the shell:
+
+![image](https://github.com/user-attachments/assets/3737fa6e-53c8-4bb0-8de0-3417e15d3575)
+
+but you may wonder, where these files are saved?
+
+these files are saved in database\saved faces
+
+Lets do a Face Recognition too, so click on Recognize all Faces
+
+![image](https://github.com/user-attachments/assets/9a9b5016-0c75-457d-a2a5-2dd0f41c23dc)
+
+## Age, Gender and Emotion detection
+
+### These detections need some models, there is nothing special about it so we're gonna skip it
+
+## Recognize Faces From screen
+
+### Takes a screenshot from your computer screen and recognizes all faces from it, nothing special so we're gonna skip it
+
+## 3D face mesh
+
+what this part does is that it takes the whole face biometrics and puts it in a 3D environment
+
+![ezgif-2-949caffc84](https://github.com/user-attachments/assets/d3c02199-c3d9-40c2-abcf-ff599e7456ea)
