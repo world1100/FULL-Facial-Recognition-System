@@ -197,6 +197,10 @@ def fr():
             # Determine how many neighbors to use for weighting in the KNN classifier
             if n_neighbors is None:
                 n_neighbors = int(round(math.sqrt(len(X))))
+                if n_neighbors > len(X):
+                    n_neighbors = len(X)
+                if len(X) < 2:
+                    raise ValueError("Not enough samples to train the KNN classifier. Please add more training images.")
                 if verbose:
                     print("Chose n_neighbors automatically:", n_neighbors)
             # Create and train the KNN classifier
@@ -412,7 +416,7 @@ def fr():
                     if len(face_bounding_boxes) != 1:
                         # If there are no people (or too many people) in a training image, skip the image.
                         if verbose:
-                            print(" Image {} not suitable for training: {}".format(img_path, " Didn't find a face" if len(face_bounding_boxes) < 1 else " Found more than one face"))
+                            print("Image {} not suitable for training: {}".format(img_path, "Didn't find a face" if len(face_bounding_boxes) < 1 else "Found more than one face"))
                     else:
                         # Add face encoding for current image to the training set
                         X.append(face_recognition.face_encodings(image, known_face_locations=face_bounding_boxes)[0])
@@ -420,8 +424,12 @@ def fr():
             # Determine how many neighbors to use for weighting in the KNN classifier
             if n_neighbors is None:
                 n_neighbors = int(round(math.sqrt(len(X))))
+                if n_neighbors > len(X):
+                    n_neighbors = len(X)
+                if len(X) < 2:
+                    raise ValueError("Not enough samples to train the KNN classifier. Please add more training images.")
                 if verbose:
-                    print(" Chose n_neighbors automatically:", n_neighbors)
+                    print("Chose n_neighbors automatically:", n_neighbors)
             # Create and train the KNN classifier
             knn_clf = neighbors.KNeighborsClassifier(n_neighbors=n_neighbors, algorithm=knn_algo, weights='distance')
             knn_clf.fit(X, y)
@@ -458,34 +466,34 @@ def fr():
             from PIL import Image, ImageDraw, ImageFont
             pil_image = Image.open(img_path).convert("RGB")
             draw = ImageDraw.Draw(pil_image)
-            
+
             # Initialize `nof` to the number of faces found
             nof = len(predictions)
-        
+
             for name, (top, right, bottom, left) in predictions:
                 # Draw a box around the face using the Pillow module
                 if name != "unknown":
                     draw.rectangle(((left, top), (right, bottom)), outline=(0, 0, 255))
                 else:
                     draw.rectangle(((left, top), (right, bottom)), outline=(255, 0, 0))
-                
+
                 # Load a font and calculate text size
-                font = ImageFont.load_default()
+                font = ImageFont.truetype("arial.ttf", 15)
                 text_bbox = draw.textbbox((left, bottom), name, font=font)
                 text_width = text_bbox[2] - text_bbox[0]
                 text_height = text_bbox[3] - text_bbox[1]
-                
+
                 # Draw label with name below the face
                 if name != "unknown":
                     draw.rectangle(((left, bottom - text_height - 10), (right, bottom)), fill=(0, 0, 255), outline=(0, 0, 255))
                 else:
                     draw.rectangle(((left, bottom - text_height - 10), (right, bottom)), fill=(255, 0, 0), outline=(255, 0, 0))
-                
+
                 draw.text((left + 6, bottom - text_height - 5), name, fill=(0, 255, 0), font=font)
-            
+
             # Insert the number of faces found into the Tkinter text widget
             t.insert('1.0', 'Found {} face(s) in this photograph.\n\n'.format(nof))
-            
+
             # Display the resulting image
             pil_image.show()
             
