@@ -2,7 +2,7 @@
 
 ## WARNING
 
-### The Creator of this project is Kasra Moradi, If you are a content creator or if you wanna share this project with someone, please put the credits
+### The Creator of this project is Kasra Moradi, If you are a content creator or if you want to share this project with someone, please put the credits
 
 ### How to install:
 
