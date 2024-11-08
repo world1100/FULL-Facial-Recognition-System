@@ -178,6 +178,8 @@ face no.2 is the face which is going to be replaced by another face
 
 ## This part is still in Beta mode, it doesn't work well
 
+## Other Features
+
 By clickign save this face in database, you are jsut adding a new face to your database(it will ask fro name in your terminal)
 
 Retrain all faces: just do it whenever you add a new face to your database, or this is the first time you are using the program and you forgot to train all faces from the first
@@ -188,3 +190,12 @@ clear shell: Clears the shell that is on the GUI page
 
 ![image](https://github.com/user-attachments/assets/faf2d8e3-a766-4572-9051-60dfc09ebad4)
 
+![image](https://github.com/user-attachments/assets/ed2da06b-7097-4669-ba6c-7c5a0fa16334)
+
+### Features:
+
+press s on keyboard: save unknown face in database
+
+press r on keyboard: retrain all faces
+
+press a on keyboard: age and gender detection
