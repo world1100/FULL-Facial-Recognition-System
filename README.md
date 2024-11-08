@@ -157,3 +157,34 @@ Lets do a Face Recognition too, so click on Recognize all Faces
 what this part does is that it takes the whole face biometrics and puts it in a 3D environment
 
 ![ezgif-2-949caffc84](https://github.com/user-attachments/assets/d3c02199-c3d9-40c2-abcf-ff599e7456ea)
+
+## Face Swap
+
+When you click on Face Swap button, the main window closes and this window opens:
+
+![image](https://github.com/user-attachments/assets/c1a376c2-6f34-419d-9a35-6c924b4a59d9)
+
+Choose Face no.1 and Face no.2 then click on swap, in my case:
+
+face no.1 is the face which is going to be the face that we are putting on face no.2
+
+face no.2 is the face which is going to be replaced by another face
+
+## Warning
+
+### Face swap need a data file for dlib which is shape_predictor_68_face_landmarks.dat, you can find the file link in data\Swap_Models or just by click <a href="https://github.com/italojs/facial-landmarks-recognition/blob/master/shape_predictor_68_face_landmarks.dat">here</a> and putting the model in data\Swap_Models
+
+![image](https://github.com/user-attachments/assets/356108c6-eaf2-4404-8f2d-9d8051ae0c2f)
+
+## This part is still in Beta mode, it doesn't work well
+
+By clickign save this face in database, you are jsut adding a new face to your database(it will ask fro name in your terminal)
+
+Retrain all faces: just do it whenever you add a new face to your database, or this is the first time you are using the program and you forgot to train all faces from the first
+
+clear shell: Clears the shell that is on the GUI page
+
+## Face Recognition from real time camera
+
+![image](https://github.com/user-attachments/assets/faf2d8e3-a766-4572-9051-60dfc09ebad4)
+
