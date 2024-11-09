@@ -2,9 +2,9 @@
 
 ## WARNING
 
-### The Creator of this project is Kasra Moradi, If you are a content creator or if you want to share this project with someone, please put the credits
+### The creator of this project is Kasra Moradi. If you are a content creator or want to share this project, please give credit.
 
-### How to install:
+### How to Install:
 
 <!DOCTYPE html>
 <html>
@@ -33,160 +33,158 @@
     </tr>
     <tr>
         <td>Mac</td>
-        <td class="not-tested">Haven't tested yet</td>
+        <td class="not-tested">Not tested yet</td>
         <td class="not-tested">Unknown</td>
     </tr>
 </table>
 </body>
 </html>
 <h3>Python Version Compatibility</h3>
-<h4>Any python version from 3.9 to 3.12 is recommended</h4>
+<h4>Any Python version from 3.9 to 3.12 is recommended</h4>
 
 ### First Step:
 <code>git clone https://github.com/KasraMoradi-0/FULL-Facial-Recognition-System</code>
 
-And then run:
+Then run:
 
-<code>pip install -r requirement.txt</code>
+<code>pip install -r requirements.txt</code>
 
-By running this code, pip will automatically install every single Library that is needed to run the program, But always remember, if you are on windows, some of them may have problems such as dlib or pillow
-### To install dlib on windows:
+By running this, pip will automatically install every library needed to run the program. Remember, if you are on Windows, some libraries like dlib or pillow may cause issues.
 
-download the compatible dlib wheel file for your python version from <a href="https://github.com/z-mahmud22/Dlib_Windows_Python3.x">here</a>
+### To Install dlib on Windows:
+
+Download the compatible dlib wheel file for your Python version from <a href="https://github.com/z-mahmud22/Dlib_Windows_Python3.x">here</a>, And then do `pip install 'dlib_wheel.whl`.
+
+## Problem with installation?
+
+### I know that installation for this program might be a little bit complex especially if you are new to python, just put on an issue on this repository and i will answer it as soon as possible
 
 ### After Installation
 
-After you have successfully installed all libraries that are needed, You are ready to run the program
+Once all required libraries are installed, you’re ready to run the program.
 
-### Run the program:
+### Run the Program:
 
-#### Linux: python3 "facial recognition system.py"
-#### Windows: py "facial recognition system.py"
+#### Linux: `python3 "facial recognition system.py"`
+#### Windows: `py "facial recognition system.py"`
 
-After running the code, We are going to choose our camera, wether it's wireless or it's an internal camera, If you are Using an internal camera, then you have to choose internal on the first question, on the second question, depends on how many cameras are connected to your computer, you have to choose the number, for example i have 2 cameras connected to my computer, the camera number one is 0 and the camera number two is 1, if it's in IP mode, you just need to write your camera ip, wether it's local or you have a port forwarding or you want to create a home security system setup
+After running the code, you’ll choose your camera, whether it’s wireless or internal. If using an internal camera, select "internal" for the first question. For the second question, choose the camera number (e.g., if you have two cameras, the first is 0, and the second is 1). For IP mode, simply enter your camera IP, whether local, port-forwarded, or part of a home security setup.
 
-#### Start using it
+#### Start Using It
 
-so to get started, lets do a simple face detection, click on face detection button that you can see on the GUI page
+To get started, perform simple face detection by clicking the face detection button on the GUI page.
 
 ![image](https://github.com/user-attachments/assets/aad30e45-2802-48c1-8701-9dd1522ed612)
 
-In here, there are Several options, Such as face detection, face hider and face mesh, for example i'm going to click on face detection, by the way, all the options are ONLY for camera in this section
+In this section, there are several options, such as face detection, face hider, and face mesh. For example, by selecting face detection, you can access features only for the camera.
 
 ![image](https://github.com/user-attachments/assets/2768ac9d-b32c-400f-a8b9-05326a787bec)
 
-And here is how real time face detection from camera look like(i am holding my phone in my hand in fron tof the camera):
+Here is how real-time face detection from a camera looks (I am holding my phone in front of the camera):
 
 ![image](https://github.com/user-attachments/assets/83a114a7-9a18-4d7c-ba30-ac39c93b25a8)
 
-Here is how face hider look like:
+Here’s how face hider looks:
 
 ![image](https://github.com/user-attachments/assets/a518d58e-95dd-44a3-a8b4-176e5ddf4042)
 
-And finally, Face mesh:
+And finally, Face Mesh:
 
 ![image](https://github.com/user-attachments/assets/4bcbd58f-6eb3-4306-bb11-fae9e514f885)
 
-
 ### Features:
 
-### In face detection, by pressing c button, you can see your face cropped, by pressing s, the cropped face is saved in datqabase/saved faces, but pressing/holding escape button for several times the window closes
+In face detection, pressing `c` shows a cropped image of your face, pressing `s` saves the cropped face in `database/saved faces`, and pressing/holding the escape key closes the window.
 
-Now lets get to Face Recognition, just click on the Face Recognition button on the main screen
+Now, let’s move to Face Recognition. Just click on the Face Recognition button on the main screen.
 
-Now this time, i'm going to choose face recognition from picture to recognize a face from an image
+This time, I’m choosing face recognition from a picture to recognize a face from an image.
 
 ## Face Train
 
-Yes, you have noticed that when you run Face Recognition form picture there is a y/n question
+When running Face Recognition from a picture, there’s a y/n question.
 
 ![image](https://github.com/user-attachments/assets/9cd70663-009a-443e-acc5-d0a22eed3991)
 
-So, let me explain how it works:
+Here’s how it works:
 
-you can put faces + names in database/recognized_faces/train
+Add faces with names in `database/recognized_faces/train`. For example, Joe Biden is already there. Add folders with names like "Andrew" and place images of that person’s face in them (100 images is an example; more images lead to better recognition).
 
-For example. you can see Joe Biden is already there, You can add Names like: Andrew, and in Andrew folder, put like 100 images of Andrew face(100 is example, more pictures = better recognition)
-
-but the program is not able to recognize this all by it self, so you need to train the program to recognize every single face from database, the program creates a file in data/prx_models named trained_faces.prx, here how it looks like to train faces:
+The program can’t recognize faces by itself initially, so you need to train it using the faces from the database. The program creates a file named `trained_faces.prx` in `data/prx_models` for this purpose.
 
 ![image](https://github.com/user-attachments/assets/81bb456d-f62b-4ab4-b029-3d58049ccdef)
 
-And here how it looks like when the training is done:
+When training is complete, it looks like this:
 
 ![image](https://github.com/user-attachments/assets/5c2ef36d-0d87-47cd-a48b-99f5b8bcf0e4)
 
 ## Warning
 
-### NEVER EVER GIVE YOUR VERY OWN trained_faces.prx FILE TO SOMEONE ELSE UNTIL YOU TRUST THEM, THERE ARE A LOT OF USEFUL INFO IN THAT FILE ESPECIALLY FOR HACKERS
+### NEVER share your personal `trained_faces.prx` file with anyone you don’t trust; it contains sensitive information that could be useful to hackers.
 
-### by the way, be aware that you don't always need to train faces again, you only need to do it when you add more faces, or this is the first time you are using the program
+Note that you don’t always need to retrain faces. Only retrain when adding new faces or using the program for the first time.
 
-## Face Recognition from picutre
+## Face Recognition from Picture
 
 ![image](https://github.com/user-attachments/assets/8561aba9-f085-4a6e-bfa2-cb155b1ef693)
 
-There are a lot of options in this part, to get started, lets open an image first
+There are various options here. To start, open an image.
 
-Lets click on Find all Biometrics on face & save cropped faces:
+Click on "Find all Biometrics on Face & Save Cropped Faces."
 
 ![image](https://github.com/user-attachments/assets/4d5425bf-b9ae-4f10-9dde-29917d62df2c)
 
-And as you can see here, Every single information about the face is written in the shell:
+As you can see, all information about the face appears in the shell:
 
 ![image](https://github.com/user-attachments/assets/3737fa6e-53c8-4bb0-8de0-3417e15d3575)
 
-but you may wonder, where these files are saved?
+Files are saved in `database/saved faces`.
 
-these files are saved in database\saved faces
-
-Lets do a Face Recognition too, so click on Recognize all Faces
+For Face Recognition, click "Recognize all Faces."
 
 ![image](https://github.com/user-attachments/assets/9a9b5016-0c75-457d-a2a5-2dd0f41c23dc)
 
-## Age, Gender and Emotion detection
+## Age, Gender, and Emotion Detection
 
-### These detections need some models, there is nothing special about it so we're gonna skip it
+These features require specific models, which are optional, so we’ll skip details here.
 
-## Recognize Faces From screen
+## Recognize Faces From Screen
 
-### Takes a screenshot from your computer screen and recognizes all faces from it, nothing special so we're gonna skip it
+Takes a screenshot and recognizes all faces in it. Nothing special, so we’ll skip details.
 
-## 3D face mesh
+## 3D Face Mesh
 
-what this part does is that it takes the whole face biometrics and puts it in a 3D environment
+This feature captures the face biometrics and presents them in a 3D environment.
 
 ![ezgif-2-949caffc84](https://github.com/user-attachments/assets/d3c02199-c3d9-40c2-abcf-ff599e7456ea)
 
 ## Face Swap
 
-When you click on Face Swap button, the main window closes and this window opens:
+Clicking the Face Swap button closes the main window and opens this one:
 
 ![image](https://github.com/user-attachments/assets/c1a376c2-6f34-419d-9a35-6c924b4a59d9)
 
-Choose Face no.1 and Face no.2 then click on swap, in my case:
+Choose Face No. 1 and Face No. 2, then click "swap". For example:
 
-face no.1 is the face which is going to be the face that we are putting on face no.2
-
-face no.2 is the face which is going to be replaced by another face
+Face No. 1 is the face we’re placing on Face No. 2, and Face No. 2 is the face that will be replaced.
 
 ## Warning
 
-### Face swap need a data file for dlib which is shape_predictor_68_face_landmarks.dat, you can find the file link in data\Swap_Models or just by click <a href="https://github.com/italojs/facial-landmarks-recognition/blob/master/shape_predictor_68_face_landmarks.dat">here</a> and putting the model in data\Swap_Models
+Face Swap requires `shape_predictor_68_face_landmarks.dat` from `data/Swap_Models`. Get it <a href="https://github.com/italojs/facial-landmarks-recognition/blob/master/shape_predictor_68_face_landmarks.dat">here</a>.
 
 ![image](https://github.com/user-attachments/assets/356108c6-eaf2-4404-8f2d-9d8051ae0c2f)
 
-## This part is still in Beta mode, it doesn't work well
+## This feature is still in Beta, so it may not work well.
 
 ## Other Features
 
-By clickign save this face in database, you are jsut adding a new face to your database(it will ask fro name in your terminal)
+Clicking "Save this Face in Database" adds a new face and prompts for a name in the terminal.
 
-Retrain all faces: just do it whenever you add a new face to your database, or this is the first time you are using the program and you forgot to train all faces from the first
+"Retrain all Faces" retrains when new faces are added or when first using the program.
 
-clear shell: Clears the shell that is on the GUI page
+"Clear Shell" clears the GUI shell.
 
-## Face Recognition from real time camera
+## Face Recognition from Real-Time Camera
 
 ![image](https://github.com/user-attachments/assets/faf2d8e3-a766-4572-9051-60dfc09ebad4)
 
@@ -194,8 +192,26 @@ clear shell: Clears the shell that is on the GUI page
 
 ### Features:
 
-press s on keyboard: save unknown face in database
+- Press `s` to save an unknown face in the database
+- Press `r` to retrain all faces
+- Press `a` for age and gender detection
 
-press r on keyboard: retrain all faces
+## Other Options:
 
-press a on keyboard: age and gender detection
+### Choose another camera input:
+
+Just in case you want to change your camera input without restarting the program
+
+### Clear shell:
+
+Clears terminal
+
+### Clear cache:
+
+Clears Cache files
+
+## Still having issue?
+
+- `@kasra_moradi_1` (on telegram)
+- `+989100469311` 
+- `kasramoradi517@gmail.com`
