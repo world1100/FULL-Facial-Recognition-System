@@ -57,7 +57,7 @@ Download the compatible dlib wheel file for your Python version from <a href="ht
 
 ## Problem with installation?
 
-### I know that installation for this program might be a little bit complex especially if you are new to python, just put on an issue on this repository and i will answer it as soon as possible
+### I know that installation for this program might be a little bit complex especially if you are new to python, just put on an<a href="https://github.com/KasraMoradi-0/FULL-Facial-Recognition-System/issues"> issue </a>on this repository and i will answer it as soon as possible
 
 ### After Installation
 
