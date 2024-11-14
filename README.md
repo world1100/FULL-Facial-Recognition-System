@@ -213,5 +213,4 @@ Clears Cache files
 ## Still having issue?
 
 - `@kasra_moradi_1` (on telegram)
-- `+989100469311` 
 - `kasramoradi517@gmail.com`
