@@ -210,7 +210,3 @@ Clears terminal
 
 Clears Cache files
 
-## Still having issue?
-
-- `@kasra_moradi_1` (on telegram)
-- `kasramoradi517@gmail.com`
